@@ -1,0 +1,22 @@
+{% extends 'classroom/base1.html' %}
+
+{% block content %}
+
+  <section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2>Welcome to the</h2>
+        <h1>Online QUIZ PORTAL!</h1>
+        <hr>
+        <p class="lead">
+    If you already have an account, go ahead and <a href="{% url 'login' %}" style="color: #FFFFFF; font-weight: bold;">log in</a>.<br> If you are new to this portal, get started
+    by creating a <a href="{% url 'student_signup' %}" style="color: #FFFFFF; font-weight: bold;">student account.</a>
+  </p>
+        <a href="{% url 'login' %}" class="smoothScroll btn btn-danger">Login</a>
+        <a href="{% url 'student_signup' %}" class="smoothScroll btn btn-default">Sign Up</a>
+      </div>
+    </div>
+  </div>    
+</section>
+{% endblock %}
